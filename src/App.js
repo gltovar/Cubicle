@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import { useForm } from 'react-hook-form'
 import emailjs from 'emailjs-com'
+import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
 
 function App() {
   const {
@@ -22,9 +23,9 @@ function App() {
 		emailjs
 			.sendForm(
 				'service_4gzqcpr',
-				'template_wqh1pfi',
+				'template_240vq61',
 				e.target,
-				'user_RvBcfNskpg2k1v812rots'
+				'fBsJjqA6nRAJqbhvJ'
 			)
 			.then(
 				result => {
@@ -55,14 +56,14 @@ function App() {
           <h2 className="about">ABOUT</h2>
         </header>
         <video autoPlay loop muted>
-          <source src='CBCL-Landing-Page.mp4' type="video/mp4" />
+          <source src='Desktop-Landing-Page.mp4' type="video/mp4" />
       </video>
         <div className="overlay"></div>
         <div className="text">
           <h2>CUBICLE </h2> 
           <h3>Coming June 2022</h3>
           <p>Join the Mailing list Today!</p>
-          <Form onSubmit={handleSubmit(sendEmail)} autoComplete='off'>
+          {!showMessage && <Form onSubmit={handleSubmit(sendEmail)} autoComplete='off'>
 					<Form.Group widths='equal' className='mt-40 mb-40'>
 						<Form.Field>
 							<label htmlFor='name' className='form-label'>
@@ -114,16 +115,16 @@ function App() {
 							style={{ width: '25%' }}>
 							Submit
 						</Button>
-						<p className={showMessage ? 'center' : 'center hide'}>
-							Thank you for signing up our Mailing list!
-						</p>
             </div>
-            </Form>
+					</Form>}
+					<p className={showMessage ? 'center' : 'center hide'}>
+						Thank you for signing up our Mailing list!
+					</p>
         </div>
         <ul className="social">
-          <li><a href="/" target='_blank' rel='noreferrer'><img src="FB-Icon.png" alt="Cubicle Game" width='100' /></a></li>
-          <li><a href="/" target='_blank' rel='noreferrer'><img src="unknown.png" alt="Cubicle Game" width='100' /></a></li>
-          <li><a href="/" target='_blank' rel='noreferrer'><img src="LinkedIn-Icon.png" alt="Cubicle Game" width='100' /></a></li>
+					<li><a href="/" target='_blank' rel='noreferrer'><GrFacebook size={100} color={'#000'}/></a></li>
+          <li><a href="/" target='_blank' rel='noreferrer'><GrLinkedin size={100} color={'#000'} /></a></li>
+          <li><a href="/" target='_blank' rel='noreferrer'><GrInstagram size={100} color={'#000'} /></a></li>
         </ul>
       </section>
     </>
