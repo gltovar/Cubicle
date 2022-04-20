@@ -121,9 +121,9 @@ function App() {
             </Form>
         </div>
         <ul className="social">
-          <li><a href="/" target='_blank' rel='noreferrer'><img src="FB-Icon.png" alt="Cubicle Game" /></a></li>
-          <li><a href="/" target='_blank' rel='noreferrer'><img src="IG-Logo.png" alt="Cubicle Game" /></a></li>
-          <li><a href="/" target='_blank' rel='noreferrer'><img src="LinkedIn-Icon.png" alt="Cubicle Game" /></a></li>
+          <li><a href="/" target='_blank' rel='noreferrer'><img src="FB-Icon.png" alt="Cubicle Game" width='100' /></a></li>
+          <li><a href="/" target='_blank' rel='noreferrer'><img src="unknown.png" alt="Cubicle Game" width='100' /></a></li>
+          <li><a href="/" target='_blank' rel='noreferrer'><img src="LinkedIn-Icon.png" alt="Cubicle Game" width='100' /></a></li>
         </ul>
       </section>
     </>
