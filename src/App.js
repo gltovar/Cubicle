@@ -22,7 +22,7 @@ function App() {
 		e.preventDefault()
 		emailjs
 			.sendForm(
-				'service_wjpgtff',
+				'service_28vt1ts',
 				'template_240vq61',
 				e.target,
 				'fBsJjqA6nRAJqbhvJ'
@@ -119,15 +119,16 @@ function App() {
 					<p className={showMessage ? 'center' : 'center hide'}>
 						Thank you for signing up our Mailing list!
 					</p>
-        </div>
-        <ul className="social">
-					<li><a href="https://www.facebook.com/UnderscoreGamesOfficial" target='_blank' rel='noreferrer'><GrFacebook size={75} color={'#000'} /></a></li>
-          <li><a href="https://discord.gg/H6EPyQCCuE" target='_blank' rel='noreferrer'><FaDiscord size={75} color={'#000'} /></a></li>
-					<li><a href="https://instagram.com/underscoregames" target='_blank' rel='noreferrer'><GrInstagram size={75} color={'#000'} /></a></li>
-          <li><a href="https://www.linkedin.com/company/underscoregames/" target='_blank' rel='noreferrer'><GrLinkedin size={75} color={'#000'} /></a></li>
-				</ul>
-				<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT</h2></a>
-				
+				</div>
+				<div className='footer'>
+					<ul className="social">
+						<li><a href="https://www.facebook.com/UnderscoreGamesOfficial" target='_blank' rel='noreferrer'><GrFacebook size={75} color={'#000'} /></a></li>
+						<li><a href="https://discord.gg/H6EPyQCCuE" target='_blank' rel='noreferrer'><FaDiscord size={75} color={'#000'} /></a></li>
+						<li><a href="https://instagram.com/underscoregames" target='_blank' rel='noreferrer'><GrInstagram size={75} color={'#000'} /></a></li>
+						<li><a href="https://www.linkedin.com/company/underscoregames/" target='_blank' rel='noreferrer'><GrLinkedin size={75} color={'#000'} /></a></li>
+					</ul>
+					<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT</h2></a>
+				</div>
       </section>
     </>
   );
