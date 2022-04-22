@@ -126,6 +126,7 @@ header .logo
 .social li
 {
   list-style: none;
+  margin-right: -20px;
 }
 .social li a
 {
@@ -212,11 +213,19 @@ input {
 
 .intro {
   color: white;
-  font-size: 38px;
+  font-size: 25px;
 }
 
 .about {
   color: white;
   font-size: 45px;
+  position: absolute;
+  right: 100px;
+  bottom: 35px;
+  z-index: 10;
 }
 
+.about:hover {
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
+}

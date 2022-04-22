@@ -4,6 +4,7 @@ import { Form, Button } from 'semantic-ui-react'
 import { useForm } from 'react-hook-form'
 import emailjs from 'emailjs-com'
 import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
+import { FaDiscord } from "react-icons/fa";
 
 function App() {
   const {
@@ -18,11 +19,10 @@ function App() {
 	const [showMessage, setShowMessage] = useState(false)
 
 	const sendEmail = (data, e) => {
-		console.log('hello', data)
 		e.preventDefault()
 		emailjs
 			.sendForm(
-				'service_4gzqcpr',
+				'service_wjpgtff',
 				'template_240vq61',
 				e.target,
 				'fBsJjqA6nRAJqbhvJ'
@@ -52,8 +52,7 @@ function App() {
       <section className="showcase">
         <header>
           <h2 className="logo"><img src="/Cubicle-Logo.png" alt="" width='120' /></h2>
-          <h2 className='intro'>A New Card Game By Underscore Games</h2>
-          <h2 className="about">ABOUT</h2>
+          <h2 className='intro'>The Workplace-Themed Party Game You Definitely Shouldn't Play at Work.</h2>
         </header>
         <video autoPlay loop muted>
           <source src='Desktop-Landing-Page.mp4' type="video/mp4" />
@@ -61,7 +60,7 @@ function App() {
         <div className="overlay"></div>
         <div className="text">
           <h2>CUBICLE </h2> 
-          <h3>Coming June 2022</h3>
+          <h3>Coming August 2022</h3>
           <p>Join the Mailing list Today!</p>
           {!showMessage && <Form onSubmit={handleSubmit(sendEmail)} autoComplete='off'>
 					<Form.Group widths='equal' className='mt-40 mb-40'>
@@ -111,7 +110,7 @@ function App() {
             <div>
 						<Button
 							type='submit'
-							className='mb-40'
+							// className='mb-40'
 							style={{ width: '25%' }}>
 							Submit
 						</Button>
@@ -122,10 +121,13 @@ function App() {
 					</p>
         </div>
         <ul className="social">
-					<li><a href="/" target='_blank' rel='noreferrer'><GrFacebook size={100} color={'#000'}/></a></li>
-          <li><a href="/" target='_blank' rel='noreferrer'><GrLinkedin size={100} color={'#000'} /></a></li>
-          <li><a href="/" target='_blank' rel='noreferrer'><GrInstagram size={100} color={'#000'} /></a></li>
-        </ul>
+					<li><a href="https://www.facebook.com/UnderscoreGamesOfficial" target='_blank' rel='noreferrer'><GrFacebook size={75} color={'#000'} /></a></li>
+          <li><a href="https://discord.gg/H6EPyQCCuE" target='_blank' rel='noreferrer'><FaDiscord size={75} color={'#000'} /></a></li>
+					<li><a href="https://instagram.com/underscoregames" target='_blank' rel='noreferrer'><GrInstagram size={75} color={'#000'} /></a></li>
+          <li><a href="https://www.linkedin.com/company/underscoregames/" target='_blank' rel='noreferrer'><GrLinkedin size={75} color={'#000'} /></a></li>
+				</ul>
+				<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT</h2></a>
+				
       </section>
     </>
   );
