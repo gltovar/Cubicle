@@ -51,7 +51,7 @@ function App() {
     <>
       <section className="showcase">
         <header>
-          <h2 className="logo"><img src="/Cubicle-Logo.png" alt="" width='120' /></h2>
+          <h2 className="logo"><a href="https://underscore.games/" target='_blank' rel='noreferrer'><img src="/Cubicle-Logo.png" alt="" width='120' /></a></h2>
           <h2 className='intro'>The Workplace-Themed Party Game You Definitely Shouldn't Play at Work.</h2>
         </header>
         <video autoPlay loop muted>
@@ -61,7 +61,7 @@ function App() {
         <div className="text">
           <h2>CUBICLE </h2> 
           <h3>Coming August 2022</h3>
-          <p>Join the Mailing list Today!</p>
+          <p className={showMessage && 'hide'}>Join the Mailing list Today!</p>
           {!showMessage && <Form onSubmit={handleSubmit(sendEmail)} autoComplete='off'>
 					<Form.Group widths='equal' className='mt-40 mb-40'>
 						<Form.Field>
