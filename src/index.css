@@ -239,13 +239,15 @@ header .logo
   .text h3 {
     font-size: 2em;
   }
+  input {
+    margin-left: 0px !important;
+  }
 } 
 
 @media (max-width: 480px)
 {
 input {
     width: 100% !important;
-    margin-left: 0px !important;
   }
 }
 
