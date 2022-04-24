@@ -171,6 +171,22 @@ header .logo
   color: #03a9f4; 
 }
 
+@media (max-width: 1400px)
+{
+  header {
+    display: block;
+    top: 0;
+  }
+  header .logo {
+    position: relative;
+    left: 0;
+    text-align: center;
+  }
+  header .intro {
+    text-align: center;
+  }
+}
+
 @media (max-width: 991px)
 {
   .showcase,
@@ -180,14 +196,41 @@ header .logo
   }
   .text h2
   {
-    font-size: 3em;
+    font-size: 4em;
   }
   .text h3
   {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 
+@media (max-width: 650px)
+{
+  .social {
+    position: inherit;
+  }
+  .about {
+    right: inherit !important;
+    bottom: inherit !important;
+    position: relative !important;
+    text-align: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .content {
+    margin-top: 225px;
+  }
+}
+
+@media (max-width: 560px)
+{
+  .content {
+    margin-top: 275px;
+  }
+} 
 label {
   color: white;
   width: 50px;
@@ -223,7 +266,7 @@ input {
   font-size: 45px;
   position: absolute;
   right: 100px;
-  bottom: 35px;
+  bottom: 28px;
   z-index: 10;
 }
 
@@ -236,4 +279,9 @@ input {
 .logo:hover {
   transition: 0.5s;
   transform: translateY(-5px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
 }

@@ -57,7 +57,8 @@ function App() {
         <video autoPlay loop muted>
           <source src='Desktop-Landing-Page.mp4' type="video/mp4" />
       </video>
-        <div className="overlay"></div>
+				<div className="overlay"></div>
+				<div className='content'>
         <div className="text">
           <h2>CUBICLE </h2> 
           <h3>Coming August 2022</h3>
@@ -128,8 +129,9 @@ function App() {
 						<li><a href="https://www.linkedin.com/company/underscoregames/" target='_blank' rel='noreferrer'><GrLinkedin size={75} color={'#000'} /></a></li>
 					</ul>
 					<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT</h2></a>
-				</div>
-      </section>
+					</div>
+					</div>
+			</section>
     </>
   );
 }
