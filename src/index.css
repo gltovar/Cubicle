@@ -294,6 +294,7 @@ input {
   right: 100px;
   bottom: 28px;
   z-index: 10;
+  text-decoration: none;
 }
 
 .about:hover {
@@ -310,4 +311,8 @@ input {
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.footer a {
+  text-decoration-color: navy;
 }
