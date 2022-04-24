@@ -202,6 +202,9 @@ header .logo
   {
     font-size: 2.5em;
   }
+  .content {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 650px)
@@ -229,6 +232,19 @@ header .logo
 {
   .content {
     margin-top: 275px;
+  }
+  header .intro {
+    font-size: 23px;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+} 
+
+@media (max-width: 400px)
+{
+  header .intro {
+    font-size: 20px;
   }
 } 
 label {
