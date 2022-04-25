@@ -93,7 +93,7 @@ header .logo
 {
   font-size:2em;
   color: #fff;
-  margin: 10px 0;
+  margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
 }
@@ -222,9 +222,6 @@ header .logo
     display: flex;
     flex-direction: column-reverse;
     margin-top: 30px;
-  }
-  .content {
-    margin-top: 200px;
   }
 }
 
