@@ -224,15 +224,12 @@ header .logo
     margin-top: 30px;
   }
   .content {
-    margin-top: 225px;
+    margin-top: 200px;
   }
 }
 
 @media (max-width: 560px)
 {
-  .content {
-    margin-top: 275px;
-  }
   header .intro {
     font-size: 23px;
   }
