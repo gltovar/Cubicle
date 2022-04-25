@@ -87,13 +87,13 @@ header .logo
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 .text p
 {
   font-size:2em;
   color: #fff;
-  margin: 20px 0;
+  margin: 10px 0;
   font-weight: 400;
   max-width: 700px;
 }
@@ -174,7 +174,7 @@ header .logo
 @media (max-width: 1400px)
 {
   header {
-    display: block;
+    /* display: block; */
     top: 0;
   }
   header .logo {
@@ -246,6 +246,9 @@ header .logo
 
 @media (max-width: 480px)
 {
+  header {
+    display: block;
+  }
 input {
     width: 100% !important;
   }

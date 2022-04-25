@@ -55,7 +55,7 @@ function App() {
           <h2 className='intro'>The Workplace-Themed Party Game You Definitely Shouldn't Play at Work.</h2>
         </header>
         <video autoPlay loop muted>
-          <source src='Desktop-Landing-Page.mp4' type="video/mp4" />
+          <source src='CBCL_LandingSlow.mp4' type="video/mp4" />
       </video>
 				<div className="overlay"></div>
 				<div className='content'>
@@ -128,7 +128,7 @@ function App() {
 						<li><a href="https://instagram.com/underscoregames" target='_blank' rel='noreferrer'><GrInstagram size={75} color={'#000'} /></a></li>
 						<li><a href="https://www.linkedin.com/company/underscoregames/" target='_blank' rel='noreferrer'><GrLinkedin size={75} color={'#000'} /></a></li>
 					</ul>
-					<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT</h2></a>
+					<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT US</h2></a>
 					</div>
 					</div>
 			</section>
