@@ -243,6 +243,12 @@ header .logo
   header {
     display: block;
   }
+  .content {
+    margin-top: 275px;
+  }
+  .text p {
+    font-size: 1.3em;
+  }
 input {
     width: 100% !important;
   }
