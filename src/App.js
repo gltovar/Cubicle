@@ -118,7 +118,7 @@ function App() {
             </div>
 					</Form>}
 					<p className={showMessage ? 'center' : 'center hide'}>
-						Thank you for signing up our Mailing list!
+						Thank you for signing up!
 					</p>
 				</div>
 				<div className='footer'>
