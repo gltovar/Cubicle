@@ -1,0 +1,122 @@
+* {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+body{
+  background-color: #FFF4D6;
+}
+
+.navBack {
+  position: relative;
+  z-index: 0;
+  top:0%;
+  right: 0%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.navCard {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  height: 300px;
+  right: 0%;
+  top: 0%;
+}
+
+.navBio {
+  position: absolute;
+  text-align: left;
+  width: 45%;
+  top: 2%;
+  left: 10%;
+}
+
+.navH1 {
+  color:#F57600;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.navP {
+  font-size: 20px;
+  color: #FFF4D6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navButton {
+  color: #FFF4D6;
+  background-color: #F57600;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  border: none;
+}
+
+.joinBio {
+  position: relative;
+  text-align: left;
+  width: 45%;
+  top: -100px;
+  left: 10%;
+} 
+
+.joinH1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.joinP {
+  top: 0%;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.topCards {
+  position: relative;
+  top: -80px;
+  left: 420px;
+}
+
+.top1 {
+  position: relative;
+  transform: rotate(-24deg);
+  left: 36px;
+  z-index: 1;
+  width: 33%;
+}
+
+.top2 {
+  position: relative;
+  transform: rotate(-6deg);
+  top: -100px;
+  z-index: 0;
+  width: 33%;
+}
+
+.top3 {
+  position: relative;
+  transform: rotate(24deg);
+  right: 25px;
+  z-index: 1;
+  width: 33%;
+}
+.media {
+  display: flex;
+  position: relative;
+  top: -120px;
+}
+
+.cubicleMov {
+  width: 60%;
+  margin: 15px;
+}
+
+.mediaBio {
+  width: 37%;
+}

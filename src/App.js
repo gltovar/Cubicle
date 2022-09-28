@@ -1,55 +1,23 @@
 import './App.css';
-import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+{/*import React, { useState, useEffect } from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import { useForm } from 'react-hook-form'
 import emailjs from 'emailjs-com'
 import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa"; */}
 
 function App() {
-  const {
-		register,
-		handleSubmit,
-		reset,
-		isDirty,
-		formState,
-		formState: { errors, isSubmitSuccessful },
-	} = useForm()
 
-	const [showMessage, setShowMessage] = useState(false)
-
-	const sendEmail = (data, e) => {
-		e.preventDefault()
-		emailjs
-			.sendForm(
-				'service_28vt1ts',
-				'template_240vq61',
-				e.target,
-				'fBsJjqA6nRAJqbhvJ'
-			)
-			.then(
-				result => {
-					console.log(result.text)
-				},
-				error => {
-					console.log(error.text)
-				}
-			)
-		e.target.reset()
-	}
-
-	useEffect(() => {
-		if (formState.isDirty) {
-			setShowMessage(false)
-		}
-		if (formState.isSubmitSuccessful) {
-			setShowMessage(true)
-			reset()
-		}
-	}, [formState, isSubmitSuccessful, isDirty, reset])
   return (
     <>
-      <section className="showcase">
+			<Router>
+				<Switch>
+					<Route path="/" exact component={Home} />
+				</Switch>
+			</Router>
+      {/* <section className="showcase">
         <header>
           <h2 className="logo"><a href="https://underscore.games/" target='_blank' rel='noreferrer'><img src="/Cubicle-Logo.png" alt="" width='120' /></a></h2>
           <h2 className='intro'>The Workplace-Themed Party Game You Definitely Shouldn't Play at Work.</h2>
@@ -131,8 +99,8 @@ function App() {
 					<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT US</h2></a>
 					</div>
 					</div>
-			</section>
-    </>
+			</section> */}
+		</>	
   );
 }
 
