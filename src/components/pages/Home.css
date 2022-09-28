@@ -119,4 +119,54 @@ body{
 
 .mediaBio {
   width: 37%;
+  margin: 10px;
 }
+
+/* .cardimages {
+  position:relative;
+  left: 7%;
+}
+
+.cardsmleft {
+	position: relative;
+  margin: 10px;
+	height: 200px;
+	border-radius: 12px;
+	transform: translateX(30px);
+}
+
+.cardmdleft {
+	position: relative;
+  margin: 10px;
+	height: 200px;
+	z-index: 4;
+	border-radius: 20px;
+	transform: translateX(15px);
+}
+
+.cardcenter {
+	position: relative;
+  margin: 10px;
+	height: 200px;
+	border-radius: 20px;
+}
+
+.cardmdright {
+	position: relative;
+  margin: 10px;
+	height: 200px;
+	border-radius: 20px;
+	transform: translateX(-15px);
+}
+
+.cardsmright {
+	position: relative;
+  margin: 10px;
+	height: 200px;
+	border-radius: 12px;
+	transform: translateX(-30px);
+}
+
+.none {
+	display: none;
+} */

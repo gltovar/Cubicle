@@ -9,7 +9,7 @@ export default function CardDisplay(props) {
           key={card[0]}
           id={card[0]}
           className={card[1] + " displayCard"}
-          src={`/cards/${card[0]}.webp`}
+          src={`/cards/${Cards-[0]}.png`}
           alt={card[0]}
         />
       ))}
