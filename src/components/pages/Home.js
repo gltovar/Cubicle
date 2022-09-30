@@ -2,7 +2,7 @@ import { useEffect, useState, React } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./Home.css";
 import { data } from './data';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+
 //import styled from "styled-components";
 //import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
 //import { FaDiscord } from "react-icons/fa";
@@ -203,16 +203,7 @@ export default function Home() {
   //     </div>
   //   )
   // }
-  const slideLeft = () => {
-    var slider = document.getElementById('slider');
-    slider.scrollLeft = slider.scrollLeft - 500;
-  };
-
-  const slideRight = () => {
-    var slider = document.getElementById('slider');
-    slider.scrollLeft = slider.scrollLeft + 500;
-  };
-
+  
   return (
     <>
       <Row className="nav">
@@ -271,8 +262,17 @@ export default function Home() {
           </p>
         </Col>
       </Row>
-      <Row className="cardimages">
-      </Row>
+      <div className="inner-slider">
+        {data.map((item) => (
+          <div className="card">
+            <img
+              className="sliderCard"
+              src={item.img}
+              alt={item.id}
+            />
+          </div>
+          ))}
+      </div>
     </>
   );
 }

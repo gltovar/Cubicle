@@ -1,12 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
-{/*import React, { useState, useEffect } from 'react'
-import { Form, Button } from 'semantic-ui-react'
-import { useForm } from 'react-hook-form'
-import emailjs from 'emailjs-com'
-import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
-import { FaDiscord } from "react-icons/fa"; */}
+
 
 function App() {
 
