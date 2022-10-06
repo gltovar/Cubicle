@@ -13,6 +13,7 @@ body{
   z-index: 0;
   top:0%;
   right: 0%;
+  width: fit-content;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -21,8 +22,8 @@ body{
 .navCard {
   position: absolute;
   z-index: 1;
-  width: 500px;
-  height: 300px;
+  width: 68%;
+  height: 45%;
   right: 0%;
   top: 0%;
 }
@@ -32,29 +33,28 @@ body{
   text-align: left;
   width: 45%;
   top: 2%;
-  left: 10%;
+  left: 7%;
 }
 
 .navH1 {
   color:#F57600;
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 1.9em;
 }
 
 .navP {
-  font-size: 20px;
+  font-size: 1.25em;
   color: #FFF4D6;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .navButton {
   color: #FFF4D6;
   background-color: #F57600;
-  font-size: 20px;
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 5px;
+  font-size: 1.25em;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  margin-top: 0.3em;
   border: none;
 }
 
@@ -62,31 +62,32 @@ body{
   position: relative;
   text-align: left;
   width: 45%;
-  top: -100px;
-  left: 10%;
+  top: -5em;
+  left: 7%;
 } 
 
 .joinH1 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 1.9em;
 }
 
 .joinP {
+  z-index: 3;
   top: 0%;
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 1.125em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
+
 .topCards {
   position: relative;
-  top: -80px;
-  left: 420px;
+  top: -5em;
+  left: 100%;
 }
 
 .top1 {
   position: relative;
   transform: rotate(-24deg);
-  left: 36px;
+  left: 6%;
   z-index: 1;
   width: 33%;
 }
@@ -94,7 +95,7 @@ body{
 .top2 {
   position: relative;
   transform: rotate(-6deg);
-  top: -100px;
+  top: -7em;
   z-index: 0;
   width: 33%;
 }
@@ -102,32 +103,40 @@ body{
 .top3 {
   position: relative;
   transform: rotate(24deg);
-  right: 25px;
+  right: 6%;
   z-index: 1;
   width: 33%;
 }
+
 .media {
   display: flex;
   position: relative;
-  top: -120px;
+  top: -6em;
 }
 
 .cubicleMov {
-  width: 60%;
-  margin: 15px;
+  width: 50%;
+  margin: 0.9em;
 }
 
 .mediaBio {
   width: 37%;
-  margin: 10px;
+  margin: 0.65em;
 }
 
 .inner-slider {
   position: relative;
   display: flex;
-  width: 1000px;
-  top: -50px;
+  width: -webkit-fill-available;
+  top: -3.1em;
   overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
 }
 
 .card {
@@ -136,9 +145,369 @@ body{
   left: 0;
   display: grid;
   grid-template-columns: repeat(1, 150px);
-  margin: 5px;
+  margin: 0.3em;
 }
 
-.sliderCard {
-  overflow: hidden;
+.footer {
+position: relative;
+}
+
+.footerBio {
+    position: relative;
+    text-align: center;
+    top: -28em;
+}
+
+.footerH1 {
+  font-size: 2.5em;
+  margin-bottom: 1.25em;
+}
+
+.footerButton{
+  color: #FFF4D6;
+  background-color: #F57600;
+  font-size: 1.9em;
+  border-radius: 0.3em;
+  padding: 0.3e;
+  margin-top: 0.3e;
+  border: none;
+}
+
+.mobileNavCard {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .navBio {
+    position: absolute;
+    text-align: left;
+    width: 45%;
+    top: 1%;
+    left: 7%;
+  }
+
+  .footerBio {
+    position: relative;
+    text-align: center;
+    top: -22em;
+  }
+
+  .mobileNavCard {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navBio {
+    position: absolute;
+    text-align: left;
+    width: 45%;
+    top: 0%;
+    left: 7%;
+  }
+
+  .footerBio {
+    position: relative;
+    text-align: center;
+    top: -22em;
+  }
+
+  .navH1 {
+    font-size: 1.5em;
+  }
+  
+  .navP {
+    font-size: 1em;
+  }
+  
+  .navButton {
+    font-size: 1em;
+  }
+
+  .topCards {
+    top: -4em;
+  }
+
+  .top2 {
+    left: -3%;
+  }
+
+  .top3 {
+    right: 10%;
+  }
+
+  .joinH1 {
+    font-size: 1.5em;
+  }
+
+  .joinP {
+    font-size: 1em;
+  }
+  
+  .media {
+    top: -8em;
+  }
+
+  .inner-slider {
+    top: -8em;
+  }
+
+  .footer {
+    top: -7em;
+  }
+
+  .footerH1 {
+      font-size: 2em;
+      margin-bottom: 1em;
+  }
+
+  .footerButton{
+    font-size: 1.3em;
+  }
+
+  .mobileNavCard {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+
+  .navBack {
+    width: 425px;
+  }
+  
+  .navCard {
+    display: none;
+  }
+
+  .navBio {
+    width: 100%;
+    left: 2%;
+  }
+
+  .navH1 {
+    font-size: 1.2em;
+  }
+  
+  .navP {
+    font-size: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 0.15em;
+  }
+  
+  
+  .navButton {
+    font-size: 0.8em;
+    margin-top: 0.15em;
+  }
+  
+  .joinBio {
+    position: relative;
+    text-align: left;
+    width: 425px;
+    top: 15em;
+    left: 2%;
+  }
+
+  .joinH1 {
+    font-size: 1.2em;
+  }
+
+  .joinP {
+    font-size: 1em;
+    width: 98%;
+  }
+
+  .topCards {
+    top: -11.5em;
+    left: 6%;
+  }
+
+  .top1 {
+    top: -10em;
+    width: 25%;
+  }
+
+  .top2 {
+    top: -17em;
+    width: 25%;
+  }
+
+  .top3 {
+    top: -11em;
+    width: 25%;
+    right: 9%;
+  }
+
+  .mobileNavCard {
+    display: block;
+    position: relative;
+    top: 2em;
+    width: 98%;
+    left: 2%;
+  }
+
+  .media {
+    top: 3em;
+    display: inline-block;
+    width: 98%;
+  }
+  .cubicleMov {
+    width: 98%;
+    left: 2%;
+    margin: 0.9em;
+  }
+
+  .mediaBio {
+    width: 98%;
+    left: 2%;
+    margin: 0.65em;
+  }
+
+  .inner-slider {
+    top: 3em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 98px);
+  }
+
+  .footer {
+    top: 5em;
+    width: 98%;
+    left: 2%;
+  }
+
+  .footerBio {
+    top: -13em;
+  }
+
+  .footerH1 {
+      font-size: 1.2em;
+      margin-bottom: 0.8em;
+  }
+
+  .footerButton{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navBack {
+    width: 425px;
+  }
+  
+  .navCard {
+    display: none;
+  }
+
+  .navBio {
+    width: 100%;
+    left: 2%;
+  }
+
+  .navH1 {
+    font-size: 1.2em;
+  }
+  
+  .navP {
+    font-size: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 0.15em;
+  }
+  
+  
+  .navButton {
+    font-size: 0.8em;
+    margin-top: 0.15em;
+  }
+  
+  .joinBio {
+    position: relative;
+    text-align: left;
+    width: 425px;
+    top: 15em;
+    left: 2%;
+  }
+
+  .joinH1 {
+    font-size: 1.2em;
+  }
+
+  .joinP {
+    font-size: 1em;
+    width: 98%;
+  }
+
+  .topCards {
+    top: -11.5em;
+    left: 6%;
+  }
+
+  .top1 {
+    top: -10em;
+    width: 25%;
+  }
+
+  .top2 {
+    top: -17em;
+    width: 25%;
+  }
+
+  .top3 {
+    top: -11em;
+    width: 25%;
+    right: 9%;
+  }
+
+  .mobileNavCard {
+    display: block;
+    position: relative;
+    top: 2em;
+    width: 98%;
+    left: 2%;
+  }
+
+  .media {
+    top: 3em;
+    display: inline-block;
+    width: 98%;
+  }
+  .cubicleMov {
+    width: 98%;
+    left: 2%;
+    margin: 0.9em;
+  }
+
+  .mediaBio {
+    width: 98%;
+    left: 2%;
+    margin: 0.65em;
+  }
+
+  .inner-slider {
+    top: 3em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 98px);
+  }
+
+  .footer {
+    top: 5em;
+    width: 98%;
+    left: 2%;
+  }
+
+  .footerBio {
+    top: -13em;
+  }
+
+  .footerH1 {
+      font-size: 1.2em;
+      margin-bottom: 0.8em;
+  }
+
+  .footerButton{
+    font-size: 1em;
+  }
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState, React } from "react";
+import { React } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./Home.css";
 import { data } from './data';
@@ -15,194 +15,33 @@ orange F57600
 */
 
 export default function Home() {
-  // const [swipeStart, setSwipeStart] = useState(0);
-  // const [swipeEnd, setSwipeEnd] = useState(0);
-  // const [triggerSwipe, setTriggerSwipe] = useState(false);
-  // const [eventCardArr] = useState(() => {
-  //   const initArr = []
-  //   for (let i = 1; i < 17; i++) {
-  //     if (i < 10) {
-  //       initArr.push(`Cards-0${i}`);
-  //     } else {
-  //       initArr.push(`Cards-${i}`);
-  //     }
-  //   }
-  //   return initArr
-  // });
+// const slider = document.querySelector('.card');
+// let isDown = false;
+// let startX;
+// let scrollLeft;
 
-  // const [cardOrder, setCardOrder] = useState(() => {
-  //   const initArr = []
-  //   for (let i = 0; i < 17; i++) {
-  //     if (i === 0) {
-  //       initArr.push([eventCardArr[i], "cardsmleft"]);
-  //     } else if (i === 1) {
-  //       initArr.push([eventCardArr[i], "cardmdleft"]);
-  //     } else if (i === 2) {
-  //       initArr.push([eventCardArr[i], "cardcenter"]);
-  //     } else if (i === 3) {
-  //       initArr.push([eventCardArr[i], "cardmdright"]);
-  //     } else if (i === 4) {
-  //       ;
-  //       initArr.push([eventCardArr[i], "cardsmright"]);
-  //     } else {
-  //       initArr.push([eventCardArr[i], "none"]);
-  //     }
-  //   };
-  //   return initArr
-  // });
-
-  // // useEffect(() => {
-  // //   const cardTypeBtns = document.querySelectorAll(".cardTypeBtn");
-  // //   cardTypeBtns.forEach(cardTypeBtn => {
-  // //     cardTypeBtn.addEventListener("click", handleCardTypeClick);
-  // //     return () => {
-  // //       cardTypeBtn.removeEventListener("click", handleCardTypeClick);
-  // //     };
-  // //   })
-  // // }, []);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     const displayCard = document.querySelectorAll(".displayCard");
-  //     displayCard.forEach(card => {
-  //         card.addEventListener("mousedown", handleMouseDown);
-  //         card.addEventListener("touchstart", handleMouseDown);
-  //     });
-  //   },1000)
-  // });
-
-  // // useEffect(() => {
-  // //   if (cardType === "eventcards") {
-  // //     setCardCount(27)
-  // //   } else if (cardType === "objectcards") {
-  // //     setCardCount(23)
-  // //   }
-  // // }, [cardType]);
-
-  // useEffect(() => {
-  //   setCardOrder(() => {
-  //     const initArr = []
-  //   for (let i = 0; i < 17; i++) {
-  //       if (i === 0) {
-  //         initArr.push([eventCardArr[i], "cardsmleft"]);
-  //       } else if (i === 1) {
-  //         initArr.push([eventCardArr[i], "cardmdleft"]);
-  //       } else if (i === 2) {
-  //         initArr.push([eventCardArr[i], "cardcenter"]);
-  //       } else if (i === 3) {
-  //         initArr.push([eventCardArr[i], "cardmdright"]);
-  //       } else if (i === 4) {
-  //         ;
-  //         initArr.push([eventCardArr[i], "cardsmright"]);
-  //       } else {
-  //         initArr.push([eventCardArr[i], "none"]);
-  //       }
-  //     };
-  //   return initArr
-  //   })
-  // }, [eventCardArr]);
-
-  // useEffect(() => {
-  //   const swipeAmount = swipeStart - swipeEnd;
-  //   if (swipeAmount > 0 && triggerSwipe) {
-  //     handleRightClick();
-      
-  //   } else if (swipeAmount < 0 && triggerSwipe) {
-  //     handleLeftClick();
-  //   }
-  // }, [triggerSwipe, swipeEnd, swipeStart]);
-
-  // function handleLeftClick() {
-  //   let newCardArr = [];
-  //   setCardOrder((prevState) => {
-  //     prevState.map((card) => {
-  //       const key = card[0];
-  //       const order = parseInt(key.replace(/\D/g, ''));
-  //       let newOrder;
-  //       if (order === 1) {
-  //         newOrder = prevState.length;
-  //       } else {
-  //         newOrder = order - 1;
-  //       }
-  //       if (newOrder > 9) {
-  //         newCardArr.push([key.substring(0, 12) + newOrder, card[1]]);
-  //       } else {
-  //         newCardArr.push([key.substring(0, 12) + 0 + newOrder, card[1]]);
-  //       }
-  //       return null;
-  //     });
-  //     return newCardArr;
-  //   });
-  // }
-
-  // function handleRightClick() {
-  //   let newCardArr = [];
-  //   setCardOrder((prevState) => {
-  //     prevState.map((card) => {
-  //       const key = card[0];
-  //       const order = parseInt(key.replace(/\D/g, ''));
-  //       let newOrder;
-  //       if (order === prevState.length) {
-  //         newOrder = 1;
-  //       } else {
-  //         newOrder = order + 1;
-  //       }
-  //       if (newOrder > 9) {
-  //         newCardArr.push([key.substring(0, 12) + newOrder, card[1]]);
-  //       } else {
-  //         newCardArr.push([key.substring(0, 12) + 0 + newOrder, card[1]]);
-  //       }
-  //       return null;
-  //     });
-  //     return newCardArr;
-  //   });
-  // }
-
-
-  // function handleMouseDown(e) {
-  //   e.preventDefault();
-  //   setTriggerSwipe(false);
-  //   if (e.screenX === undefined) {
-  //     setSwipeStart(e.touches[0].clientX);
-  //   } else {
-  //     setSwipeStart(e.screenX);
-  //   }
-  //   document.getElementById("cardId").addEventListener("mousemove", handleMouseMove);
-  //   document.getElementById("cardId").addEventListener("touchmove", handleMouseMove);
-  //   window.addEventListener("mouseup", handleMouseUp);
-  //   window.addEventListener("touchend", handleMouseUp);
-  //   }
-    
-  // function handleMouseUp(e) {
-  //   document.getElementById("cardId").removeEventListener("mousemove", handleMouseMove);
-  //   document.getElementById("cardId").removeEventListener("touchmove", handleMouseMove);
-  //   setTriggerSwipe(true);
-  //   }
-    
-  // function handleMouseMove(e) {
-  //   if (e.screenX === undefined) {
-  //     setSwipeEnd(e.touches[0].clientX);
-  //   } else {
-  //     setSwipeEnd(e.screenX);
-  //   }
-  // } 
-
-  // function CardDisplay(props) {
-  //   const cards = props.cardOrder;
-  //   return (
-  //     <div id="cardId">
-  //       {cards.map((card) => (
-  //         <img
-  //           key={card[0]}
-  //           id={card[0]}
-  //           className={card[1] + " displayCard"}
-  //           src={`/cards/${card[0]}.png`}
-  //           alt={card[0]}
-  //         />
-  //       ))}
-  //     </div>
-  //   )
-  // }
+// slider.addEventListener('mousedown', (e) => {
+//   isDown = true;
+//   slider.classList.add('active');
+//   startX = e.pageX - slider.offsetLeft;
+//   scrollLeft = slider.scrollLeft;
+// });
+// slider.addEventListener('mouseleave', () => {
+//   isDown = false;
+//   slider.classList.remove('active');
+// });
+// slider.addEventListener('mouseup', () => {
+//   isDown = false;
+//   slider.classList.remove('active');
+// });
+// slider.addEventListener('mousemove', (e) => {
+//   if(!isDown) return;
+//   e.preventDefault();
+//   const x = e.pageX - slider.offsetLeft;
+//   const walk = (x - startX) * 3;
+//   slider.scrollLeft = scrollLeft - walk;
+//   console.log(walk);
+// });
   
   return (
     <>
@@ -247,6 +86,12 @@ export default function Home() {
           </div>
         </Col>
       </Row>
+      <Row className="mobileNavCard">
+          <img className="mobileNavCard"
+            src="./images/cubicle-box-mockup-800px-v2.png"
+            alt="nav card"
+          ></img>
+      </Row>
       <Row className="media">
         <Col className="cubicleMov">
           <video
@@ -262,17 +107,31 @@ export default function Home() {
           </p>
         </Col>
       </Row>
-      <div className="inner-slider">
-        {data.map((item) => (
-          <div className="card">
-            <img
-              className="sliderCard"
-              src={item.img}
-              alt={item.id}
-            />
-          </div>
-          ))}
-      </div>
+      <Row className="cardReel">
+        <div className="inner-slider">
+          {data.map((item) => (
+            <div className="card">
+              <img
+                className="sliderCard"
+                src={item.img}
+                alt={item.id}
+              />
+            </div>
+            ))}
+        </div>
+      </Row>
+      <Row className="footer">
+        <div className="footerImg">
+          <img className="footerCubicle"
+            src="./images/footer.png"
+            alt="footer"
+          ></img>
+        </div>
+        <Col className="footerBio">
+            <h3 className="footerH1">CUBICLE <br></br>KICKSTARTER</h3>
+            <button className="footerButton">APPLY WITHIN</button>
+        </Col>
+      </Row>
     </>
   );
 }
