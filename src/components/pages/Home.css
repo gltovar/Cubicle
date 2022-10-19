@@ -77,7 +77,7 @@ body {
 
 .topCards {
   position: relative;
-  top: -25em;
+  top: -18em;
   left: 100%;
 }
 
@@ -108,7 +108,7 @@ body {
 .media {
   display: flex;
   position: relative;
-  top: -26em;
+  top: -25em;
 }
 
 .cubicleMov {
@@ -125,7 +125,7 @@ body {
   position: relative;
   display: flex;
   width: -webkit-fill-available;
-  top: -24em;
+  top: -23em;
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
@@ -147,7 +147,7 @@ body {
 
 .footer {
   position: relative;
-  top: -23em;
+  top: -22em;
 }
 
 .footerCubicle{
@@ -231,6 +231,11 @@ body {
   .footer {
     top: -19em;
   }
+
+  .footerBio {
+    top: 12%;
+    left: 35%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -289,6 +294,7 @@ body {
 
   .card {
     grid-template-columns: repeat(1, 150px);
+    margin: 0.2em;
   }
 
   .footer {
@@ -315,15 +321,15 @@ body {
   }
 
   .navH1 {
-    font-size: 1.5em;
+    font-size: 2.25em;
   }
   
   .navP {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   
   .navButton {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
   .joinBio {
@@ -343,11 +349,11 @@ body {
   }
 
   .joinH1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .joinP {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   
   .media {
@@ -362,9 +368,14 @@ body {
     top: -7em;
   }
 
+  .footerBio {
+    top: 20%;
+    left: 40%;
+  }
+
   .footerH1 {
-      font-size: 2em;
-      margin-bottom: 1em;
+    font-size: 2.5em;
+    margin-bottom: 1em;
   }
 
   .footerButton{
