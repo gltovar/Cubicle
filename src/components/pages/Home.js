@@ -51,18 +51,18 @@ export default function Home() {
           alt="nav background"
           width="100%"
         ></img>
-        <Col className="navCard">
-          <img className="navCard"
-            src="./images/cubicle-box-mockup-800px-v2.png"
-            alt="nav card"
-          ></img>
-        </Col>
-        <Col className="navBio">
-          <h1 className="navH1">CUBICLE</h1>
-          <p className="navP">The Workplace-Themed Party Game <br></br> You Definitely Shouldn't Play at Work.
-          </p>
-          <button className="navButton">  NOW ON KICKSTARTER  </button>
-        </Col>
+          <Col className="navCard">
+            <img className="navCard"
+              src="./images/cubicle-box-mockup-800px-v2.png"
+              alt="nav card"
+            ></img>
+          </Col>
+          <Col className="navBio">
+            <h1 className="navH1">CUBICLE</h1>
+            <p className="navP">The Workplace-Themed Party Game <br></br> You Definitely Shouldn't Play at Work.
+            </p>
+            <button className="navButton">  NOW ON KICKSTARTER  </button>
+          </Col>
       </Row>
       <Row className="join">
         <Col className="joinBio">
@@ -120,18 +120,16 @@ export default function Home() {
             ))}
         </div>
       </Row>
-      <Row className="footer">
-        <div className="footerImg">
+      <footer className="footer">
           <img className="footerCubicle"
             src="./images/footer.png"
             alt="footer"
           ></img>
-        </div>
-        <Col className="footerBio">
+          <Col className="footerBio">
             <h3 className="footerH1">CUBICLE <br></br>KICKSTARTER</h3>
             <button className="footerButton">APPLY WITHIN</button>
-        </Col>
-      </Row>
+          </Col>
+      </footer>
     </>
   );
 }

@@ -2,30 +2,31 @@
   max-width: 100%;
   max-height: 100%;
   margin: 0;
+  font-family: "Gochi Hand";
 }
 
-body{
+body {
   background-color: #FFF4D6;
 }
 
+.nav {
+  width: 1440px;
+}
 .navBack {
   position: relative;
   z-index: 0;
   top:0%;
   right: 0%;
-  width: fit-content;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
 }
 
 .navCard {
   position: absolute;
+  object-fit: contain;
   z-index: 1;
-  width: 68%;
-  height: 45%;
-  right: 0%;
-  top: 0%;
+  width: 650px;
+  height: 550px;
+  right: 2%;
+  top: -3%;
 }
 
 .navBio {
@@ -38,20 +39,18 @@ body{
 
 .navH1 {
   color:#F57600;
-  font-size: 1.9em;
+  font-size: 4.9em;
 }
 
 .navP {
-  font-size: 1.25em;
+  font-size: 2.25em;
   color: #FFF4D6;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 .navButton {
   color: #FFF4D6;
   background-color: #F57600;
-  font-size: 1.25em;
+  font-size: 2.25em;
   border-radius: 0.3em;
   padding: 0.3em;
   margin-top: 0.3em;
@@ -62,25 +61,23 @@ body{
   position: relative;
   text-align: left;
   width: 45%;
-  top: -5em;
+  top: -9em;
   left: 7%;
 } 
 
 .joinH1 {
-  font-size: 1.9em;
+  font-size: 3.9em;
 }
 
 .joinP {
   z-index: 3;
   top: 0%;
-  font-size: 1.125em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  font-size: 2.25em;
 }
 
 .topCards {
   position: relative;
-  top: -5em;
+  top: -25em;
   left: 100%;
 }
 
@@ -111,7 +108,7 @@ body{
 .media {
   display: flex;
   position: relative;
-  top: -6em;
+  top: -26em;
 }
 
 .cubicleMov {
@@ -120,7 +117,7 @@ body{
 }
 
 .mediaBio {
-  width: 37%;
+  width: 45%;
   margin: 0.65em;
 }
 
@@ -128,7 +125,7 @@ body{
   position: relative;
   display: flex;
   width: -webkit-fill-available;
-  top: -3.1em;
+  top: -24em;
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
@@ -144,37 +141,96 @@ body{
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(1, 150px);
+  grid-template-columns: repeat(1, 180px);
   margin: 0.3em;
 }
 
 .footer {
-position: relative;
+  position: relative;
+  top: -23em;
+}
+
+.footerCubicle{
+  position: relative;
+  z-index: 0;
 }
 
 .footerBio {
-    position: relative;
-    text-align: center;
-    top: -28em;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 20%;
+  left: 40%;
 }
 
 .footerH1 {
-  font-size: 2.5em;
-  margin-bottom: 1.25em;
+  font-size: 4.9em;
+  margin-bottom: 0.1em;
 }
 
 .footerButton{
   color: #FFF4D6;
   background-color: #F57600;
-  font-size: 1.9em;
+  font-size: 2.9em;
   border-radius: 0.3em;
-  padding: 0.3e;
-  margin-top: 0.3e;
+  padding: 0.3em;
+  margin-top: 0.3em;
   border: none;
 }
 
 .mobileNavCard {
   display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navCard {
+    width: 460px;
+    height: 390px;
+  }
+
+  .navBio {
+    top: 1%;
+  }
+
+  .navH1 {
+    font-size: 3.9em;
+  }
+
+  .navP {
+    font-size: 1.8em;
+  }
+
+  .navButton {
+    font-size: 1.8em;
+  }
+
+  .joinBio {
+    top: -7em;
+  }
+
+  .joinH1 {
+    font-size: 2.9em;
+  }
+  
+  .joinP {
+    font-size: 1.8em;
+  }
+
+  .topCards {
+    top: -15em;
+  }
+
+  .media {
+    top: -19em;
+  }
+
+  .inner-slider {
+    top: -19em;
+  }
+
+  .footer {
+    top: -19em;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -186,10 +242,57 @@ position: relative;
     left: 7%;
   }
 
-  .footerBio {
-    position: relative;
-    text-align: center;
-    top: -22em;
+  .navCard {
+    width: 403px;
+    height: 340px;
+  }
+
+  .navBio {
+    top: 1%;
+  }
+
+  .navH1 {
+    font-size: 2.9em;
+  }
+
+  .navP {
+    font-size: 1.4em;
+  }
+
+  .navButton {
+    font-size: 1.8em;
+  }
+
+  .joinBio {
+    top: -6em;
+  }
+
+  .joinH1 {
+    font-size: 1.9em;
+  }
+  
+  .joinP {
+    font-size: 1.4em;
+  }
+
+  .topCards {
+    top: -7em;
+  }
+
+  .media {
+    top: -13em;
+  }
+
+  .inner-slider {
+    top: -13em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 150px);
+  }
+
+  .footer {
+    top: -13em;
   }
 
   .mobileNavCard {
@@ -198,18 +301,17 @@ position: relative;
 }
 
 @media only screen and (max-width: 768px) {
+  .navCard {
+    width: 345px;
+    height: 290px;
+  }
+
   .navBio {
     position: absolute;
     text-align: left;
     width: 45%;
     top: 0%;
     left: 7%;
-  }
-
-  .footerBio {
-    position: relative;
-    text-align: center;
-    top: -22em;
   }
 
   .navH1 {
@@ -224,8 +326,12 @@ position: relative;
     font-size: 1em;
   }
 
+  .joinBio {
+    top: -5em;
+  }
+
   .topCards {
-    top: -4em;
+    top: -2.5em;
   }
 
   .top2 {
@@ -245,11 +351,11 @@ position: relative;
   }
   
   .media {
-    top: -8em;
+    top: -7em;
   }
 
   .inner-slider {
-    top: -8em;
+    top: -7em;
   }
 
   .footer {
@@ -294,10 +400,10 @@ position: relative;
     margin-bottom: 0.15em;
   }
   
-  
   .navButton {
     font-size: 0.8em;
     margin-top: 0.15em;
+    letter-spacing: .1rem;
   }
   
   .joinBio {
@@ -309,7 +415,7 @@ position: relative;
   }
 
   .joinH1 {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 
   .joinP {
@@ -318,8 +424,8 @@ position: relative;
   }
 
   .topCards {
-    top: -11.5em;
-    left: 6%;
+    top: -11em;
+    left: 10%;
   }
 
   .top1 {
@@ -372,13 +478,7 @@ position: relative;
   }
 
   .footer {
-    top: 5em;
-    width: 98%;
-    left: 2%;
-  }
-
-  .footerBio {
-    top: -13em;
+    top: 3em;
   }
 
   .footerH1 {
@@ -388,10 +488,12 @@ position: relative;
 
   .footerButton{
     font-size: 1em;
+    letter-spacing: .1rem;
   }
 }
 
 @media only screen and (max-width: 375px) {
+  
   .navBack {
     width: 425px;
   }
@@ -410,15 +512,14 @@ position: relative;
   }
   
   .navP {
-    font-size: 1em;
-    margin-top: 0.25em;
-    margin-bottom: 0.15em;
+    font-size: 0.8em;
+    margin-top: 0;
   }
   
   
   .navButton {
     font-size: 0.8em;
-    margin-top: 0.15em;
+    margin-top: 0;
   }
   
   .joinBio {
@@ -430,7 +531,7 @@ position: relative;
   }
 
   .joinH1 {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 
   .joinP {
@@ -440,7 +541,6 @@ position: relative;
 
   .topCards {
     top: -11.5em;
-    left: 6%;
   }
 
   .top1 {
@@ -492,16 +592,6 @@ position: relative;
     grid-template-columns: repeat(1, 98px);
   }
 
-  .footer {
-    top: 5em;
-    width: 98%;
-    left: 2%;
-  }
-
-  .footerBio {
-    top: -13em;
-  }
-
   .footerH1 {
       font-size: 1.2em;
       margin-bottom: 0.8em;
@@ -509,5 +599,6 @@ position: relative;
 
   .footerButton{
     font-size: 1em;
+    letter-spacing: .1rem;
   }
 }
