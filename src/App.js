@@ -63,7 +63,6 @@ function App() {
           <h2>CUBICLE </h2> 
           <h3>Coming October 2022</h3>
           <p className={showMessage && 'hide'}>Join the Mailing list Today!</p>
-	  <iframe src="https://underscoregames.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
           {!showMessage && <Form onSubmit={handleSubmit(sendEmail)} autoComplete='off'>
 					<Form.Group widths='equal' className='mt-40 mb-40'>
 						<Form.Field>
