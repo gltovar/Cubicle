@@ -1,0 +1,31 @@
+export const data2 = [
+{
+  id:9,
+  img:'./cards/Cards-09.png'
+},
+{
+  id:10,
+  img:'./cards/Cards-10.png'
+},
+{
+  id:11,
+  img:'./cards/Cards-11.png'
+},
+{
+  id:12,
+  img:'./cards/Cards-12.png'
+},{
+  id:13,
+  img:'./cards/Cards-13.png'
+},{
+  id:14,
+  img:'./cards/Cards-14.png'
+},{
+  id:15,
+  img:'./cards/Cards-15.png'
+},
+{
+  id:16,
+  img:'./cards/Cards-16.png'
+},
+];

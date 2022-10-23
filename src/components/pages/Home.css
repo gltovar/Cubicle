@@ -1,6 +1,6 @@
 * {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 1500px;
   margin: 0;
   font-family: "Gochi Hand";
 }
@@ -127,7 +127,6 @@ body {
   width: -webkit-fill-available;
   top: -23em;
   overflow: hidden;
-  overflow-x: auto;
   white-space: nowrap;
   transition: all 0.2s;
   transform: scale(0.98);
@@ -141,34 +140,48 @@ body {
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(1, 180px);
+  grid-template-columns: repeat(1, 170px);
   margin: 0.3em;
 }
 
-.footer {
+.inner-slider2 {
   position: relative;
-  top: -22em;
+  display: flex;
+  width: -webkit-fill-available;
+  top: -21em;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
 }
 
-.footerCubicle{
+.signUp {
+  position: relative;
+  top: -21em;
+}
+
+.signUpCubicle{
   position: relative;
   z-index: 0;
 }
 
-.footerBio {
+.signUpBio {
   position: absolute;
   text-align: center;
   z-index: 1;
-  top: 20%;
-  left: 40%;
+  top:14%;
+  left: 37%;
 }
 
-.footerH1 {
+.signUpH1 {
   font-size: 4.9em;
   margin-bottom: 0.1em;
 }
 
-.footerButton{
+.signUpButton{
   color: #FFF4D6;
   background-color: #F57600;
   font-size: 2.9em;
@@ -178,6 +191,22 @@ body {
   border: none;
 }
 
+.footer {
+  position: relative;
+  top: -11em;
+  left: 2%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcon {
+  font-size: 4em;
+  margin: 0.5em;
+  border: #FFF4D6;
+}
 .mobileNavCard {
   display: none;
 }
@@ -228,13 +257,30 @@ body {
     top: -19em;
   }
 
-  .footer {
-    top: -19em;
+  .inner-slider2 {
+    top: -18em;
   }
 
-  .footerBio {
+  .card {
+    grid-template-columns: repeat(1, 120px);
+  }
+
+  .signUp {
+    top: -18em;
+  }
+
+  .signUpBio {
     top: 12%;
     left: 35%;
+  }
+
+  .footer {
+    top: -9em;
+    left: 4%;
+  }
+
+  .socialIcon {
+    font-size: 3.5em;
   }
 }
 
@@ -292,13 +338,35 @@ body {
     top: -13em;
   }
 
+  .inner-slider2 {
+    top: -13em;
+  }
+
   .card {
-    grid-template-columns: repeat(1, 150px);
+    grid-template-columns: repeat(1, 106px);
     margin: 0.2em;
   }
 
-  .footer {
+  .signUp {
     top: -13em;
+  }
+
+  .signUpH1 {
+    font-size: 3.5em;
+  }
+
+  .signUpButton {
+    font-size: 2em;
+  }
+  
+  .footer {
+    top: -7.5em;
+    left: 0%;
+  }
+
+  .socialIcon {
+    font-size: 3em;
+    margin: 0.2em;
   }
 
   .mobileNavCard {
@@ -364,22 +432,39 @@ body {
     top: -7em;
   }
 
-  .footer {
+  .inner-slider2 {
     top: -7em;
   }
 
-  .footerBio {
-    top: 20%;
-    left: 40%;
+  .card {
+    grid-template-columns: repeat(1, 90px);
   }
 
-  .footerH1 {
+  .signUp {
+    top: -7em;
+  }
+
+  .signUpBio {
+    top: 14%;
+    left: 38%;
+  }
+
+  .signUpH1 {
     font-size: 2.5em;
     margin-bottom: 1em;
   }
 
-  .footerButton{
+  .signUpButton{
     font-size: 1.3em;
+  }
+
+  .footer {
+    top: -6.5em;
+  }
+
+  .socialIcon {
+    font-size: 2.5em;
+    margin: 0.2em;
   }
 
   .mobileNavCard {
@@ -407,8 +492,8 @@ body {
   
   .navP {
     font-size: 1em;
-    margin-top: 0.25em;
-    margin-bottom: 0.15em;
+    margin-top: 0.1em;
+    margin-bottom: 0.05em;
   }
   
   .navButton {
@@ -466,11 +551,10 @@ body {
   .media {
     top: 3em;
     display: inline-block;
-    width: 98%;
+    width: 95%;
   }
   .cubicleMov {
     width: 98%;
-    left: 2%;
     margin: 0.9em;
   }
 
@@ -484,22 +568,36 @@ body {
     top: 3em;
   }
 
-  .card {
-    grid-template-columns: repeat(1, 98px);
-  }
-
-  .footer {
+  .inner-slider2 {
     top: 3em;
   }
 
-  .footerH1 {
+  .card {
+    grid-template-columns: repeat(1, 47px);
+  }
+
+  .signUp {
+    top: 3em;
+  }
+
+  .signUpH1 {
       font-size: 1.2em;
       margin-bottom: 0.8em;
   }
 
-  .footerButton{
+  .signUpButton{
     font-size: 1em;
     letter-spacing: .1rem;
+  }
+
+  .footer {
+    top: -3.8em;
+    left: -3%;
+  }
+
+  .socialIcon {
+    font-size: 1.5em;
+    margin: 0.2em;
   }
 }
 
@@ -583,6 +681,7 @@ body {
     display: inline-block;
     width: 98%;
   }
+
   .cubicleMov {
     width: 98%;
     left: 2%;
@@ -599,17 +698,31 @@ body {
     top: 3em;
   }
 
-  .card {
-    grid-template-columns: repeat(1, 98px);
+  .inner-slider2 {
+    top: 3em;
   }
 
-  .footerH1 {
+  .card {
+    grid-template-columns: repeat(1, 41px);
+  }
+
+  .signUpH1 {
       font-size: 1.2em;
       margin-bottom: 0.8em;
   }
 
-  .footerButton{
+  .signUpButton{
     font-size: 1em;
     letter-spacing: .1rem;
+  }
+
+  .footer {
+    top: -3.4em;
+    left: -2%;
+  }
+
+  .socialIcon {
+    font-size: 1.3em;
+    margin: 0.2em;
   }
 }

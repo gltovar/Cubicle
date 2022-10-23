@@ -2,6 +2,9 @@ import { React } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./Home.css";
 import { data } from './data';
+import { data2 } from './data2';
+import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
+import { FaDiscord } from "react-icons/fa";
 
 //import styled from "styled-components";
 //import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
@@ -120,16 +123,37 @@ export default function Home() {
             ))}
         </div>
       </Row>
-      <footer className="footer">
-          <img className="footerCubicle"
+      <Row className="cardReel2">
+        <div className="inner-slider2">
+          {data2.map((item) => (
+            <div className="card">
+              <img
+                className="sliderCard"
+                src={item.img}
+                alt={item.id}
+              />
+            </div>
+            ))}
+        </div>
+      </Row>
+      <Row className="signUp">
+          <img className="signUpCubicle"
             src="./images/footer.png"
-            alt="footer"
+            alt="signUp"
           ></img>
-          <Col className="footerBio">
-            <h3 className="footerH1">CUBICLE <br></br>KICKSTARTER</h3>
-            <button className="footerButton">APPLY WITHIN</button>
+          <Col className="signUpBio">
+            <h3 className="signUpH1">CUBICLE <br></br>KICKSTARTER</h3>
+            <button className="signUpButton">APPLY WITHIN</button>
           </Col>
-      </footer>
+        <div className='footer'>
+            <ul className="social">
+              <div className="socialIcon"><a href="https://www.facebook.com/UnderscoreGamesOfficial" target='_blank' rel='noreferrer'><GrFacebook color={'#FFF4D6'} /></a></div>
+              <div className="socialIcon"><a href="https://discord.gg/H6EPyQCCuE" target='_blank' rel='noreferrer'><FaDiscord color={'#FFF4D6'} /></a></div>
+              <div className="socialIcon"><a href="https://instagram.com/underscoregames" target='_blank' rel='noreferrer'><GrInstagram color={'#FFF4D6'} /></a></div>
+              <div className="socialIcon"><a href="https://www.linkedin.com/company/underscoregames/" target='_blank' rel='noreferrer'><GrLinkedin color={'#FFF4D6'} /></a></div>
+            </ul>
+        </div>
+      </Row>
     </>
   );
 }
