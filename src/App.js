@@ -128,7 +128,7 @@ function App() {
 						<li><a href="https://instagram.com/underscoregames" target='_blank' rel='noreferrer'><GrInstagram size={75} color={'#000'} /></a></li>
 						<li><a href="https://www.linkedin.com/company/underscoregames/" target='_blank' rel='noreferrer'><GrLinkedin size={75} color={'#000'} /></a></li>
 					</ul>
-					<a href='https://underscore.games/about' target='_blank' rel="noreferrer"><h2 className="about">ABOUT US</h2></a>
+					<a href='https://underscore.games' target='_blank' rel="noreferrer"><h2 className="about">ABOUT US</h2></a>
 					</div>
 					</div>
 			</section>
