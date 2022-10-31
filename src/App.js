@@ -1,7 +1,7 @@
-import './App.css';
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
-
+import "./fonts/Neuzeit Grotesk Cond W03 Black.ttf";
 
 function App() {
 

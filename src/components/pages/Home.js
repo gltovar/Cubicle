@@ -6,6 +6,7 @@ import { data2 } from './data2';
 import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
 import { FaDiscord } from "react-icons/fa";
 
+
 //import styled from "styled-components";
 //import { GrFacebook, GrLinkedin, GrInstagram } from "react-icons/gr";
 //import { FaDiscord } from "react-icons/fa";
