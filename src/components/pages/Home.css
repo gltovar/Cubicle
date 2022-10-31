@@ -1,0 +1,843 @@
+* {
+  max-width: 100%;
+  max-height: 1500px;
+  margin: 0;
+  font-family: "neuzit";
+}
+
+body {
+  background-color: #FFF4D6;
+}
+
+.nav {
+  width: 1440px;
+}
+.navBack {
+  position: relative;
+  z-index: 0;
+  top:0%;
+  right: 0%;
+}
+
+.navCard {
+  position: absolute;
+  object-fit: contain;
+  z-index: 1;
+  width: 650px;
+  height: 550px;
+  right: 2%;
+  top: -3%;
+}
+
+.navBio {
+  position: absolute;
+  text-align: left;
+  width: 45%;
+  top: 2%;
+  left: 7%;
+}
+
+.navH1 {
+  color:#F57600;
+  font-size: 4.9em;
+}
+
+.navP {
+  font-size: 2.25em;
+  color: #FFF4D6;
+}
+
+.navButton {
+  color: #FFF4D6;
+  background-color: #F57600;
+  font-size: 2.25em;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  margin-top: 0.3em;
+  border: none;
+}
+
+.joinBio {
+  position: relative;
+  text-align: left;
+  width: 45%;
+  top: -9em;
+  left: 7%;
+} 
+
+.joinH1 {
+  font-size: 3.9em;
+}
+
+.joinP {
+  z-index: 3;
+  top: 0%;
+  font-size: 2.25em;
+}
+
+.topCards {
+  position: relative;
+  top: -18em;
+  left: 100%;
+}
+
+.top1 {
+  position: relative;
+  transform: rotate(-24deg);
+  left: 6%;
+  z-index: 1;
+  width: 33%;
+}
+
+.top2 {
+  position: relative;
+  transform: rotate(-6deg);
+  top: -7em;
+  z-index: 0;
+  width: 33%;
+}
+
+.top3 {
+  position: relative;
+  transform: rotate(24deg);
+  right: 6%;
+  z-index: 1;
+  width: 33%;
+}
+
+.media {
+  display: flex;
+  position: relative;
+  top: -25em;
+}
+
+.cubicleMov {
+  width: 50%;
+  margin: 0.9em;
+}
+
+.mediaBio {
+  width: 45%;
+  margin: 0.65em;
+}
+
+.inner-slider {
+  position: relative;
+  display: flex;
+  width: -webkit-fill-available;
+  top: -23em;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 170px);
+  margin: 0.3em;
+}
+
+.inner-slider2 {
+  position: relative;
+  display: flex;
+  width: -webkit-fill-available;
+  top: -21em;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.signUp {
+  position: relative;
+  top: -21em;
+}
+
+.signUpCubicle{
+  position: relative;
+  z-index: 0;
+}
+
+.signUpBio {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top:14%;
+  left: 37%;
+}
+
+.signUpH1 {
+  font-size: 4.9em;
+  margin-bottom: 0.1em;
+}
+
+.signUpButton{
+  color: #FFF4D6;
+  background-color: #F57600;
+  font-size: 2.9em;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  margin-top: 0.3em;
+  border: none;
+}
+
+.footer {
+  position: relative;
+  top: -11em;
+  left: 2%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcon {
+  font-size: 4em;
+  margin: 0.5em;
+  border: #FFF4D6;
+}
+.mobileNavCard {
+  display: none;
+}
+
+@media only screen and (max-width: 1379px) {
+  .navCard {
+    width: 520px;
+    height: 440px;
+    top: -2%;
+  }
+
+  .navH1 {
+    font-size: 3.9em;
+  }
+
+  .navP {
+    font-size: 1.8em;
+  }
+
+  .navButton {
+    font-size: 1.8em;
+  }
+
+  .joinBio {
+    top: -7em;
+  }
+
+  .joinH1 {
+    font-size: 3.9em;
+  }
+  
+  .joinP {
+    font-size: 1.8em;
+  }
+
+  .media {
+    top: -19em;
+  }
+
+  .inner-slider {
+    top: -19em;
+  }
+
+  .inner-slider2 {
+    top: -19em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 135px);
+  }
+
+  .signUp {
+    top: -18em;
+  }
+}
+/* @media only screen and (max-width: 1100px) {
+  .navCard {
+    width: 460px;
+    height: 390px;
+  }
+
+  .navBio {
+    top: 1%;
+  }
+
+  .navH1 {
+    font-size: 3.9em;
+  }
+
+  .navP {
+    font-size: 1.8em;
+  }
+
+  .navButton {
+    font-size: 1.8em;
+  }
+
+  .joinBio {
+    top: -7em;
+  }
+
+  .joinH1 {
+    font-size: 2.9em;
+  }
+  
+  .joinP {
+    font-size: 1.8em;
+  }
+
+  .topCards {
+    top: -15em;
+  }
+
+  .media {
+    top: -19em;
+  }
+
+  .inner-slider {
+    top: -19em;
+  }
+
+  .inner-slider2 {
+    top: -18em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 120px);
+  }
+
+  .signUp {
+    top: -18em;
+  }
+
+  .signUpBio {
+    top: 12%;
+    left: 35%;
+  }
+
+  .footer {
+    top: -9em;
+    left: 4%;
+  }
+
+  .socialIcon {
+    font-size: 3.5em;
+  }
+} */
+
+@media only screen and (max-width: 1100px) {
+  .navBio {
+    width: 45%;
+    top: 1%;
+    left: 7%;
+  }
+
+  .navCard {
+    width: 450px;
+    height: 390px;
+    right: 5%;
+  }
+
+  .navBio {
+    top: 1%;
+  }
+
+  .navH1 {
+    font-size: 2.9em;
+  }
+
+  .navP {
+    font-size: 1.4em;
+  }
+
+  .navButton {
+    font-size: 1.8em;
+  }
+
+  .joinBio {
+    top: -6em;
+  }
+
+  .joinH1 {
+    font-size: 1.9em;
+  }
+  
+  .joinP {
+    font-size: 1.4em;
+  }
+
+  .topCards {
+    top: -7em;
+  }
+
+  .media {
+    top: -13em;
+  }
+
+  .inner-slider {
+    top: -13em;
+  }
+
+  .inner-slider2 {
+    top: -13em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 115px);
+    margin: 0.2em;
+  }
+
+  .signUp {
+    top: -13em;
+  }
+
+  .signUpH1 {
+    font-size: 3.5em;
+  }
+
+  .signUpButton {
+    font-size: 2em;
+  }
+  
+  .footer {
+    top: -7.5em;
+    left: 0%;
+  }
+
+  .socialIcon {
+    font-size: 3em;
+    margin: 0.2em;
+  }
+
+  .mobileNavCard {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .navCard {
+    width: 345px;
+    height: 290px;
+    right: -2%;
+  }
+
+  .navBio {
+    position: absolute;
+    text-align: left;
+    width: 45%;
+    top: 0%;
+    left: 7%;
+  }
+
+  .navH1 {
+    font-size: 2.25em;
+  }
+  
+  .navP {
+    font-size: 1.1em;
+  }
+  
+  .navButton {
+    font-size: 1.25em;
+  }
+
+  .joinBio {
+    top: -5em;
+  }
+
+  .topCards {
+    top: -7.5em;
+  }
+
+  .top2 {
+    left: -3%;
+  }
+
+  .top3 {
+    right: 10%;
+  }
+
+  .joinH1 {
+    font-size: 2em;
+  }
+
+  .joinP {
+    font-size: 1.1em;
+  }
+  
+  .media {
+    top: -12em;
+  }
+
+  .inner-slider {
+    top: -12em;
+  }
+
+  .inner-slider2 {
+    top: -12em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 95px);
+  }
+
+  .signUp {
+    top: -12em;
+  }
+
+  .signUpBio {
+    top: 14%;
+    left: 38%;
+  }
+
+  .signUpH1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  .signUpButton{
+    font-size: 1.3em;
+  }
+
+  .footer {
+    top: -6.5em;
+  }
+
+  .socialIcon {
+    font-size: 2.5em;
+    margin: 0.2em;
+  }
+
+  .mobileNavCard {
+    display: none;
+  }
+}
+@media only screen and (max-width: 672px) {
+  .navCard {
+    width: 300px;
+    height: 250px;
+    right: -1%;
+    top: -4%;
+  }
+
+  .navH1 {
+    font-size: 1.8em;
+  }
+  
+  .navP {
+    font-size: 0.8em;
+  }
+  
+  .navButton {
+    font-size: 0.8em;
+  }
+
+  .joinBio {
+    top: -4em;
+  }
+
+  .joinH1 {
+    font-size: 1.6em;
+  }
+
+  .joinP {
+    font-size: 0.8em;
+  }
+
+  .top2 {
+    top: -5.8em;
+  }
+
+  .topCards {
+    top: -3.5em;
+  }
+
+  .media {
+    top: -7em;
+  }
+
+  .inner-slider {
+    top: -7em;
+  }
+
+  .inner-slider2 {
+    top: -7em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 75px);
+  }
+
+  .signUp {
+    top: -7em;
+  }
+
+  .signUpH1 {
+    margin-bottom: 0.5em;
+  }
+}
+@media only screen and (max-width: 485px) {
+
+  .navBack {
+    width: 425px;
+  }
+  
+  .navCard {
+    display: none;
+  }
+
+  .navBio {
+    width: 100%;
+    left: 2%;
+  }
+
+  .navH1 {
+    font-size: 1.2em;
+  }
+  
+  .navP {
+    font-size: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.05em;
+  }
+  
+  .navButton {
+    font-size: 0.8em;
+    margin-top: 0.15em;
+    letter-spacing: .1rem;
+  }
+  
+  .joinBio {
+    position: relative;
+    text-align: left;
+    width: 425px;
+    top: 15em;
+    left: 2%;
+  }
+
+  .joinH1 {
+    font-size: 2em;
+  }
+
+  .joinP {
+    font-size: 1em;
+    width: 98%;
+  }
+
+  .topCards {
+    top: -11em;
+    left: 10%;
+  }
+
+  .top1 {
+    top: -10em;
+    width: 25%;
+  }
+
+  .top2 {
+    top: -17em;
+    width: 25%;
+  }
+
+  .top3 {
+    top: -11em;
+    width: 25%;
+    right: 9%;
+  }
+
+  .mobileNavCard {
+    display: block;
+    position: relative;
+    top: 2em;
+    width: 98%;
+    left: 2%;
+  }
+
+  .media {
+    top: 3em;
+    display: inline-block;
+    width: 95%;
+  }
+  .cubicleMov {
+    width: 98%;
+    margin: 0.9em;
+  }
+
+  .mediaBio {
+    width: 98%;
+    left: 2%;
+    margin: 0.65em;
+  }
+
+  .inner-slider {
+    top: 3em;
+  }
+
+  .inner-slider2 {
+    top: 3em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 47px);
+  }
+
+  .signUp {
+    top: 3em;
+  }
+
+  .signUpH1 {
+      font-size: 1.2em;
+      margin-bottom: 0.8em;
+  }
+
+  .signUpButton{
+    font-size: 1em;
+    letter-spacing: .1rem;
+  }
+
+  .footer {
+    top: -3.8em;
+    left: -3%;
+  }
+
+  .socialIcon {
+    font-size: 1.5em;
+    margin: 0.2em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  
+  .navBack {
+    width: 425px;
+  }
+  
+  .navCard {
+    display: none;
+  }
+
+  .navBio {
+    width: 100%;
+    left: 2%;
+  }
+
+  .navH1 {
+    font-size: 1.2em;
+  }
+  
+  .navP {
+    font-size: 0.8em;
+    margin-top: 0;
+  }
+  
+  
+  .navButton {
+    font-size: 0.8em;
+    margin-top: 0;
+  }
+  
+  .joinBio {
+    position: relative;
+    text-align: left;
+    width: 425px;
+    top: 15em;
+    left: 2%;
+  }
+
+  .joinH1 {
+    font-size: 2em;
+  }
+
+  .joinP {
+    font-size: 1em;
+    width: 98%;
+  }
+
+  .topCards {
+    top: -11.5em;
+  }
+
+  .top1 {
+    top: -10em;
+    width: 25%;
+  }
+
+  .top2 {
+    top: -17em;
+    width: 25%;
+  }
+
+  .top3 {
+    top: -11em;
+    width: 25%;
+    right: 9%;
+  }
+
+  .mobileNavCard {
+    display: block;
+    position: relative;
+    top: 2em;
+    width: 98%;
+    left: 2%;
+  }
+
+  .media {
+    top: 3em;
+    display: inline-block;
+    width: 98%;
+  }
+
+  .cubicleMov {
+    width: 98%;
+    left: 2%;
+    margin: 0.9em;
+  }
+
+  .mediaBio {
+    width: 98%;
+    left: 2%;
+    margin: 0.65em;
+  }
+
+  .inner-slider {
+    top: 3em;
+  }
+
+  .inner-slider2 {
+    top: 3em;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 41px);
+  }
+
+  .signUpH1 {
+      font-size: 1.2em;
+      margin-bottom: 0.8em;
+  }
+
+  .signUpButton{
+    font-size: 1em;
+    letter-spacing: .1rem;
+  }
+
+  .footer {
+    top: -3.4em;
+    left: -2%;
+  }
+
+  .socialIcon {
+    font-size: 1.3em;
+    margin: 0.2em;
+  }
+}

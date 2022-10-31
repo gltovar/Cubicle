@@ -1,0 +1,34 @@
+export const data = [
+  {
+    id:1,
+    img:'./cards/Cards-01.png'
+  },
+  {
+    id:2,
+    img:'./cards/Cards-02.png'
+  },
+  {
+    id:3,
+    img:'./cards/Cards-03.png'
+  },
+  {
+    id:4,
+    img:'./cards/Cards-04.png'
+  },
+  {
+    id:5,
+    img:'./cards/Cards-05.png'
+  },
+  {
+    id:6,
+    img:'./cards/Cards-06.png'
+  },
+  {
+    id:7,
+    img:'./cards/Cards-07.png'
+  },
+  {
+    id:8,
+    img:'./cards/Cards-08.png'
+  },
+];
